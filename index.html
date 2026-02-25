@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق مؤقت الصلاة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="audio-switch">
+            <button id="audio-toggle">🔔 تشغيل التنبيه</button>
+            <p style="font-size: 10px; margin-top: 5px;">(يجب تفعيله ليعمل الأذان تلقائياً)</p>
+        </div>
+
+        <header>
+            <h1 id="city">جاري تحديد الموقع...</h1>
+            <p id="date-display"></p>
+        </header>
+
+        <div class="next-prayer-box">
+            <span>الصلاة القادمة: <strong id="next-prayer-name">-</strong></span>
+            <div id="countdown">00:00:00</div>
+        </div>
+
+        <div class="times-list">
+            <div class="prayer-card" id="card-Fajr">
+                <span>الفجر</span>
+                <span class="time" id="Fajr">-</span>
+            </div>
+            <div class="prayer-card" id="card-Dhuhr">
+                <span>الظهر</span>
+                <span class="time" id="Dhuhr">-</span>
+            </div>
+            <div class="prayer-card" id="card-Asr">
+                <span>العصر</span>
+                <span class="time" id="Asr">-</span>
+            </div>
+            <div class="prayer-card" id="card-Maghrib">
+                <span>المغرب</span>
+                <span class="time" id="Maghrib">-</span>
+            </div>
+            <div class="prayer-card" id="card-Isha">
+                <span>العشاء</span>
+                <span class="time" id="Isha">-</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="adhan-audio" src="adhan.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
